@@ -1,0 +1,177 @@
+#page-menu {
+  margin-bottom: 50px; }
+
+#page-content {
+  text-align: center;
+  padding: 0px 0px 46px; }
+  #page-content .swiper {
+    width: auto;
+    height: 257px;
+    text-align: center;
+    background: #e4f4fc;
+    padding: 0 80px;
+    position: relative; }
+    #page-content .swiper .swiper-header {
+      font-size: 20px;
+      margin-bottom: 15px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      top: -40px; }
+    #page-content .swiper .swiper-wrapper {
+      width: 401px;
+      height: auto;
+      overflow: visible;
+      margin: 0 auto; }
+      #page-content .swiper .swiper-wrapper .swiper-button {
+        height: 65px;
+        width: 65px;
+        border-radius: 33px;
+        background: #3ebbf4;
+        position: absolute;
+        top: 21px;
+        bottom: 0;
+        margin: auto; }
+        #page-content .swiper .swiper-wrapper .swiper-button .arrow {
+          height: 17px;
+          position: absolute;
+          top: 22px;
+          width: 17px;
+          transform: rotate(45deg) scale(1) skew(1deg) translate(0px);
+          -webkit-transform: rotate(45deg) scale(1) skew(1deg) translate(0px);
+          -moz-transform: rotate(45deg) scale(1) skew(1deg) translate(0px);
+          -o-transform: rotate(45deg) scale(1) skew(1deg) translate(0px);
+          -ms-transform: rotate(45deg) scale(1) skew(1deg) translate(0px); }
+      #page-content .swiper .swiper-wrapper .button-next {
+        right: -82px; }
+        #page-content .swiper .swiper-wrapper .button-next .arrow {
+          border-right: 3px solid #fff;
+          border-top: 3px solid #fff;
+          left: 19px; }
+      #page-content .swiper .swiper-wrapper .button-prev {
+        left: -86px; }
+        #page-content .swiper .swiper-wrapper .button-prev .arrow {
+          border-left: 3px solid #fff;
+          border-bottom: 3px solid #fff;
+          left: 27px; }
+      #page-content .swiper .swiper-wrapper .swiper-container {
+        width: inherit;
+        height: inherit;
+        margin-left: -13px;
+        margin-top: 21px; }
+        #page-content .swiper .swiper-wrapper .swiper-container .swiper-wrapper .swiper-slide {
+          height: 214px; }
+          #page-content .swiper .swiper-wrapper .swiper-container .swiper-wrapper .swiper-slide .slide-header {
+            background-color: rgba(62, 187, 244, 0.8);
+            color: #fff;
+            display: none;
+            font-size: 20px;
+            font-style: normal;
+            height: 52px;
+            line-height: 52px;
+            padding-left: 12px;
+            position: absolute;
+            top: 162px;
+            width: 146px;
+            text-align: left;
+            margin: auto;
+            left: 0;
+            right: 0;
+            letter-spacing: 0.5px; }
+          #page-content .swiper .swiper-wrapper .swiper-container .swiper-wrapper .swiper-slide a {
+            display: block; }
+          #page-content .swiper .swiper-wrapper .swiper-container .swiper-wrapper .swiper-slide img {
+            width: 158px;
+            height: 214px; }
+        #page-content .swiper .swiper-wrapper .swiper-container .swiper-wrapper .empty-box {
+          width: 158px;
+          height: 214px;
+          background-color: transparent; }
+          #page-content .swiper .swiper-wrapper .swiper-container .swiper-wrapper .empty-box > * {
+            display: none; }
+        #page-content .swiper .swiper-wrapper .swiper-container .swiper-wrapper .active-slide .slide-header {
+          display: block; }
+  #page-content .journals-list {
+    margin: 23px auto 35px;
+    max-width: 795px;
+    overflow: hidden;
+    padding: 0 22.5px; }
+    #page-content .journals-list .journal-preview {
+      display: inline-block;
+      margin: -42px 13px 13px; }
+      #page-content .journals-list .journal-preview a {
+        display: block;
+        text-decoration: none; }
+        #page-content .journals-list .journal-preview a .preview-header {
+          background-color: rgba(62, 187, 244, 0.8);
+          color: #fff;
+          display: block;
+          font-size: 20px;
+          font-style: normal;
+          height: 52px;
+          line-height: 52px;
+          padding-left: 12px;
+          position: relative;
+          text-align: left;
+          top: 214px;
+          letter-spacing: 0.5px; }
+        #page-content .journals-list .journal-preview a img {
+          width: 160px;
+          height: 214px; }
+
+/* Responsive */
+@media (max-width: 860px) {
+  #page-content .swiper {
+    height: 215px !important;
+    padding: 0 53px !important; }
+    #page-content .swiper .swiper-wrapper .swiper-button {
+      height: 43px;
+      width: 43px; }
+      #page-content .swiper .swiper-wrapper .swiper-button .arrow {
+        height: 12px;
+        width: 12px;
+        border-width: 2px;
+        top: 14px; }
+    #page-content .swiper .swiper-wrapper .button-next {
+      right: -47px; }
+      #page-content .swiper .swiper-wrapper .button-next .arrow {
+        left: 12px; }
+    #page-content .swiper .swiper-wrapper .button-prev {
+      left: -47px; }
+      #page-content .swiper .swiper-wrapper .button-prev .arrow {
+        left: 18px; }
+    #page-content .swiper .swiper-wrapper .swiper-container {
+      margin-left: 0px !important; }
+      #page-content .swiper .swiper-wrapper .swiper-container .swiper-slide {
+        height: 173px !important; }
+        #page-content .swiper .swiper-wrapper .swiper-container .swiper-slide .slide-header {
+          width: 117px !important;
+          height: 42px !important;
+          top: 131px !important;
+          line-height: 42px !important; }
+        #page-content .swiper .swiper-wrapper .swiper-container .swiper-slide img {
+          width: 129px !important;
+          height: 173px !important; }
+      #page-content .swiper .swiper-wrapper .swiper-container .empty-box {
+        height: 173px !important; }
+  #page-content .journals-list {
+    max-width: 775px; }
+    #page-content .journals-list .journal-preview .preview-header {
+      top: 170px !important;
+      height: 41px !important;
+      line-height: 41px !important; }
+    #page-content .journals-list .journal-preview img {
+      width: 126px !important;
+      height: 170px !important; } }
+@media (max-width: 374px) {
+  .swiper .swiper-wrapper {
+    width: auto !important; } }
+@media (min-width: 375px) and (max-width: 550px) {
+  .swiper .swiper-wrapper {
+    width: 252px !important; } }
+@media (min-width: 551px) and (max-width: 860px) {
+  .swiper .swiper-wrapper {
+    width: 401px !important; } }
+
+/*# sourceMappingURL=years.css.map */

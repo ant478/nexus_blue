@@ -1,0 +1,298 @@
+  @mixin inline_left {
+    display: inline-block;
+    float: left;
+  }
+
+  @mixin inline_right {
+    display: inline-block;
+    float: right;
+  }
+
+  @mixin link {
+    cursor: pointer;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+
+  #page-content {
+
+    .block {
+
+    }
+
+    .block-header { text-transform: uppercase; }
+
+    .current-issue {
+      .magazine {
+        @include inline_left;
+        width: 380px;
+        position: relative;
+        padding-right: 18px;
+        border-right: 1px solid #d6d7d9;
+        margin-right: -1px;
+
+        .cover {
+          height: 209px;
+          overflow: hidden;
+          position: relative;
+          @include inline_left;
+
+          .new-strip {
+            background-color: #3ebbf4;
+            bottom: 18px;
+            color: #fff;
+            font-size: 20px;
+            height: 40px;
+            left: -45px;
+            line-height: 40px;
+            position: absolute;
+            text-align: center;
+            width: 170px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+
+        .links {
+          text-align: left;
+          @include inline_left;
+          font-size: 18px;
+          height: inherit;
+          letter-spacing: 0.5px;
+          line-height: 33px;
+          padding-left: 19px;
+          padding-top: 17px;
+          margin-right: 13px;
+
+          a {
+            color: #1f89b9;
+            display: block;
+            @include link;
+          }
+
+          .read_button {
+            border: 2px solid #000000;
+            color: #000;
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            height: 39px;
+            letter-spacing: 0.2px;
+            line-height: 40px;
+            margin-left: 3px;
+            margin-top: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 157px;
+          }
+
+          .read_button:hover { text-decoration: none; }
+        }
+
+        &:before {
+          content: "";
+          background-color: #3ebbf4;
+          display: block;
+          height: 2px;
+          left: 170px;
+          margin-left: 10px;
+          position: absolute;
+          width: 30px;
+        }
+      }
+
+      .video-container {
+        border-left: 1px solid #d6d7d9;
+        padding-left: 18px;
+        overflow: hidden;
+        min-height: 209px;
+
+        .video {
+          display: block;
+          float: none;
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 5px;
+          height: 0;
+          iframe {
+            min-height: 209px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .news-preview {
+      display: inline-block;
+      text-align: left;
+      min-width: 380px;
+      width: 47%;
+      min-height: 100px;
+
+      &:nth-child(even) {float: left;}
+      &:nth-child(odd) {float: right;}
+
+      &:nth-last-child(2) { &:after { display: none; }  }
+      &:nth-last-child(3) { &:after { display: none; }  }
+
+      .news-image {
+        @include inline_left;
+        width: 100px;
+        height: 100px;
+
+        img {
+          height: inherit;
+          width: inherit;
+        }
+      }
+
+      .news-text {
+        overflow: hidden;
+        padding-left: 17px;
+        height: 100px;
+        font-size: 0;
+
+        .news-header {
+          font-size: 17px;
+          color: rgb(31, 137, 185);
+          line-height: 21px;
+          letter-spacing: 0.3px;
+          padding-top: -1px;
+          @include link;
+        }
+
+        .news-date {
+          font-size: 13px;
+          color: rgb(154, 154, 154);
+          line-height: 1.462;
+        }
+
+        .news-description {
+          font-size: 16px;
+          color: rgb(46, 46, 46);
+          line-height: 20px;
+
+          &:after { content: '...'; }
+        }
+      }
+
+      &:after {
+        background: #3ebbf4 none no-repeat scroll left center;
+        content: "";
+        display: block;
+        height: 2px;
+        margin: 21px 0;
+        position: relative;
+        width: 31px;
+      }
+    }
+
+    .view-more-link {
+      color: #1f89b9;
+      display: inline-block;
+      font-size: 14px;
+      height: 20px;
+      letter-spacing: 0;
+      line-height: 1.214;
+      position: relative;
+      text-transform: uppercase;
+      width: auto;
+      margin: 43px auto 0;
+      @include link;
+    }
+  }
+
+  /*Responsive*/
+
+    @media (max-width: 860px) {
+
+      #page-content {
+        .block-header { font-size: 16px !important; }
+
+        .current-issue {
+          .block-content {
+            padding-bottom: 216px;
+            position: relative;
+          }
+
+          .magazine {
+            bottom: 0;
+            left: 0;
+            margin-top: 40px;
+            position: absolute;
+            width: 100%;
+            border: none;
+            margin: 0;
+
+            .cover {
+              height: 170px;
+              img {
+                width: 131px;
+                height: auto;
+              }
+
+              .new-strip {
+                bottom: 13px;
+                font-size: 16px;
+                height: 32px;
+                left: -57px;
+                line-height: 32px;
+              }
+            }
+
+            .links {
+              float: left;
+              font-size: 16px;
+              line-height: 27px;
+              padding-top: 10px;
+              padding-left: 15px;
+              margin-right: 0;
+
+              .read_button {
+                width: 131px;
+                height: 33px;
+                line-height: 33px;
+                font-size: 14px;
+              }
+            }
+
+            &:before { left: 136px !important; }
+          }
+
+          .video-container { 
+            border: none;
+            width: 100%;
+            padding-left: 0;
+          }
+        }
+
+        .news-preview {
+          width: 100%;
+          &:nth-last-child(3) { &:after { display: block; }  }
+          .news-text {
+            .news-header {
+              line-height: 20px;
+              font-size: 17px;
+            }
+
+            .news-date {
+              font-size: 12px;
+              line-height: 19px;
+            }
+
+            .news-description {
+              font-size: 15px;
+              line-height: 19px;
+            }
+          }
+        }
+
+      }
+    }

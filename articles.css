@@ -1,0 +1,86 @@
+#page-menu {
+  margin-bottom: 20px; }
+
+#page-content .block {
+  background: transparent; }
+#page-content .block-header {
+  font-size: 20px;
+  color: #2e2e2e;
+  line-height: 0.75;
+  text-align: center;
+  background: transparent;
+  top: 0;
+  padding: 0;
+  display: block; }
+#page-content .block-content {
+  overflow: hidden;
+  min-height: 100%;
+  letter-spacing: 0.5px; }
+  #page-content .block-content .article {
+    display: inline-block;
+    float: left;
+    width: calc(50% - 28px);
+    padding-top: 23px; }
+    #page-content .block-content .article:nth-child(even) {
+      float: left; }
+    #page-content .block-content .article:nth-child(odd) {
+      float: right; }
+    #page-content .block-content .article .article-header {
+      display: block;
+      text-decoration: none;
+      font-size: 17px;
+      color: #1f89b9;
+      line-height: 21px;
+      text-align: left;
+      margin-top: 10px;
+      cursor: pointer;
+      text-decoration: none; }
+      #page-content .block-content .article .article-header:hover {
+        text-decoration: underline; }
+    #page-content .block-content .article .article-content {
+      font-size: 16px;
+      color: #212121;
+      line-height: 20px;
+      text-align: justify;
+      margin-top: 8px;
+      margin-bottom: 8px; }
+    #page-content .block-content .article .article-author {
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.871);
+      line-height: 15px;
+      text-align: left; }
+    #page-content .block-content .article .article-pages {
+      font-size: 13px;
+      color: #9a9a9a;
+      line-height: 15px;
+      text-align: left;
+      margin-top: 3px; }
+    #page-content .block-content .article:before {
+      content: '';
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background-color: #d1dce1;
+      bottom: 5px; }
+
+/* Responsive */
+@media (max-width: 860px) {
+  #page-content .block-header {
+    font-size: 17px !important; }
+  #page-content .article {
+    width: 100% !important; }
+    #page-content .article .article-header {
+      font-size: 17px;
+      line-height: 15px; }
+    #page-content .article .article-author {
+      font-size: 14px !important;
+      line-height: 15px; }
+    #page-content .article .article-pages {
+      font-size: 13px;
+      line-height: 15px; }
+    #page-content .article .article-content {
+      font-size: 15px !important;
+      line-height: 20px !important; } }
+
+/*# sourceMappingURL=articles.css.map */
